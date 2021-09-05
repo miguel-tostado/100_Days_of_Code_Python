@@ -1,41 +1,42 @@
 import random
 
-rock = '''
+rock = """
     _______
 ---'   ____)
       (_____)
       (_____)
       (____)
 ---.__(___)
-'''
+"""
 
-paper = '''
+paper = """
     _______
 ---'   ____)____
           ______)
           _______)
          _______)
 ---.__________)
-'''
+"""
 
-scissors = '''
+scissors = """
     _______
 ---'   ____)____
           ______)
        __________)
       (____)
 ---.__(___)
-'''
+"""
 
 hand = [rock, paper, scissors]
-hands = ['rock', 'paper', 'scissors']
+hands = ["rock", "paper", "scissors"]
 
 userInput = int(
-    input('What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n'))
+    input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+)
 npcInput = random.randint(0, 2)
 
 if userInput > 2:
-    print('Enter a valid number.')
+    print("Enter a valid number.")
     exit()
 else:
     userHand = hands[userInput]
@@ -45,19 +46,19 @@ else:
     print(f"NPC chose {npcHand}\n{hand[npcInput]}")
 
     if userHand == npcHand:
-        print('Draw')
-    elif userHand == 'rock':
-        if npcHand == 'paper':
-            print('You lose.')
+        print("Draw")
+    elif userHand == "rock":
+        if npcHand == "paper":
+            print("You lose.")
         else:
-            print('You win!')
-    elif userHand == 'paper':
-        if npcHand == 'scissors':
-            print('You lose.')
+            print("You win!")
+    elif userHand == "paper":
+        if npcHand == "scissors":
+            print("You lose.")
         else:
-            print('You win!')
-    elif userHand == 'scissors':
-        if npcHand == 'rock':
-            print('You lose.')
+            print("You win!")
+    elif userHand == "scissors":
+        if npcHand == "rock":
+            print("You lose.")
         else:
-            print('You win!')
+            print("You win!")

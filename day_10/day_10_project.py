@@ -18,10 +18,10 @@ def multiply(n1, n2):
 
 
 operations = {
-    '+': add,
-    '-': subtract,
-    '/': divide,
-    '*': multiply,
+    "+": add,
+    "-": subtract,
+    "/": divide,
+    "*": multiply,
 }
 
 
@@ -42,9 +42,10 @@ def calculator():
         print(f"{num1} {operation_symbol} {num2} = {answer}")
 
         more_calcs = input(
-            f"Type 'y' to continue calculating with {answer}, or type 'n' to exit: ")
+            f"Type 'y' to continue calculating with {answer}, or type 'n' to exit: "
+        )
 
-        if more_calcs == 'n':
+        if more_calcs == "n":
             should_continue = False
             calculator()
         else:

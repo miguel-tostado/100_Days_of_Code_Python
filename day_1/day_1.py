@@ -1,34 +1,34 @@
-print('Hello world!')
+print("Hello world!")
 
 ################
 # Exercise 001 #
 ################
 
-print('Day 1 - Python Print Function')
-print('The function is declared like this:')
+print("Day 1 - Python Print Function")
+print("The function is declared like this:")
 print("print('what to print')")
 
 ################
 
-print('Hello' + ' ' + 'Miguel')
+print("Hello" + " " + "Miguel")
 
 ################
 # Exercise 002 #
 ################
 
-print('Day 1 - String Manipulation')
-print("String Concatenation is done with the \"+\" sign.")
+print("Day 1 - String Manipulation")
+print('String Concatenation is done with the "+" sign.')
 print('e.g. print("Hello " + "world")')
 print("New lines can be created with a backslash and n.")
 
 ################
-print('Hello ' + input('What is your name? ') + '!')
+print("Hello " + input("What is your name? ") + "!")
 
 ################
 # Exercise 003 #
 ################
 
-print(len(input('What\'s your name? ')))
+print(len(input("What's your name? ")))
 
 ################
 # Exercise 004 #

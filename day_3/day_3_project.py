@@ -1,4 +1,5 @@
-print('''
+print(
+    '''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -19,15 +20,18 @@ ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
-''')
+'''
+)
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
 cross1 = input(
-    'You\'re at a crossroad. Where do you want to go? Type \"left\" or \"right\"\n').lower()
+    'You\'re at a crossroad. Where do you want to go? Type "left" or "right"\n'
+).lower()
 
-if cross1 == 'left':
-    print('''                  _
+if cross1 == "left":
+    print(
+        """                  _
              .''.' \    _  __
  ___         './    '. ' `'  `
     '._______.'       \
@@ -43,11 +47,14 @@ if cross1 == 'left':
                                      .-'_______'-.
                                          _/    'o'
                                       .-'
- ''')
+ """
+    )
     cross2 = input(
-        'You come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across.\n').lower()
-    if cross2 == 'wait':
-        print('''
+        'You come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across.\n'
+    ).lower()
+    if cross2 == "wait":
+        print(
+            """
       ______
    ,-' ;  ! `-.
   / :  !  :  . \\
@@ -59,18 +66,20 @@ if cross1 == 'left':
  )_ !  ,  ;  ;  |
  || .  .  :  :  |
  |" .  |  :  .  |
- |mt-2_;----.___|''')
+ |mt-2_;----.___|"""
+        )
         cross3 = input(
-            'You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which color do you choose?').lower()
-        if cross3 == 'red':
-            print('Burned by fire. Game Over.')
-        elif cross3 == 'yellow':
-            print('You Win!')
-        elif cross3 == 'blue':
-            print('Eaten by beasts. Game Over.')
+            "You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which color do you choose?"
+        ).lower()
+        if cross3 == "red":
+            print("Burned by fire. Game Over.")
+        elif cross3 == "yellow":
+            print("You Win!")
+        elif cross3 == "blue":
+            print("Eaten by beasts. Game Over.")
         else:
-            print('Game Over.')
+            print("Game Over.")
     else:
-        print('Attacked by trout. Game Over.')
+        print("Attacked by trout. Game Over.")
 else:
-    print('Fall into a hole. Game Over.')
+    print("Fall into a hole. Game Over.")

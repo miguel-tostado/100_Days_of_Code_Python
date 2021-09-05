@@ -1,4 +1,5 @@
 import math
+
 ################
 # Exercise 8.1 #
 ################
@@ -8,7 +9,8 @@ import math
 
 def paint_calc(height, width, cover):
     cans_paint = math.ceil((width * height) / cover)
-    print(f'You\'ll need {cans_paint} cans of paint')
+    print(f"You'll need {cans_paint} cans of paint")
+
 
 # Write your code above this line 👆
 # Define a function called paint_calc() so that the code below works.
@@ -37,9 +39,10 @@ def prime_checker(number):
                 is_prime = False
                 break
     if is_prime:
-        print('It\'s a prime number.')
+        print("It's a prime number.")
     else:
-        print('It\'s not a prime number.')
+        print("It's not a prime number.")
+
 
 # Write your code above this line 👆
 

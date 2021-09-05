@@ -2,6 +2,7 @@
 # Exercise 10.1 #
 #################
 
+
 def is_leap(year):
     """Returns True or False if the given year is a leap year.
 

@@ -4,6 +4,7 @@ import random
 
 
 def cls():
+    """Clears the screen to make everything look cleaner each game"""
     os.system("cls" if os.name == "nt" else "clear")
 
 
@@ -11,35 +12,60 @@ deck = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 
 def deal_card():
+    """Selects a random card from the deck list
+
+    Returns:
+        int: Random card from the deck list
+    """
     return random.choice(deck)
 
 
 def update_scores(hand):
+    """Calculates the sum of each card in a hand
+
+    Args:
+        hand (list): List of each card in a hand
+
+    Returns:
+        int: Sum of each card's value in a hand
+    """
     return sum(hand)
 
 
-def check_scores(user_score, computer_score):
+def verify_win_conditions(user_score, computer_score):
+    """Determines whether the player won, lost, or the game ends in a draw
+
+    Args:
+        user_score (int): User's score
+        computer_score (int): Computer's score
+    """
     if user_score > 21:
         print("You lose!")
-        return -1
     elif computer_score > 21 and user_score <= 21:
         print("You win!")
-        return 1
     elif user_score == computer_score:
         print("Draw")
-        return 0
     elif user_score > computer_score or user_score == 21:
         print("You win!")
-        return 1
     else:
         print("You lose!")
-        return -1
 
 
 def end_game(user_hand, user_score, computer_hand, computer_score):
+    """Prints the end-game messages and asks user if they want to play another game
+
+    Args:
+        user_hand (list): User's final hand
+        user_score (int): User's final score
+        computer_hand (list): Computer's final hand
+        computer_score (int): Computer's final score
+
+    Returns:
+        bool: If the user wants to play a new game, returns True. Otherwise the program ends.
+    """
     print(f"Your final hand: {user_hand}, final score: {user_score}")
     print(f"Computer's final hand: {computer_hand}, final score: {computer_score}")
-    check_scores(user_score, computer_score)
+    verify_win_conditions(user_score, computer_score)
     restart = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
     if restart == "y":
         return True
@@ -48,6 +74,11 @@ def end_game(user_hand, user_score, computer_hand, computer_score):
 
 
 def blackjack():
+    """Initiate's a game of Blackjack
+
+    Returns:
+        bool: if the game is over, returns True. Otherwise returns False to continue the current game.
+    """
     user_hand = []
     user_score = 0
 

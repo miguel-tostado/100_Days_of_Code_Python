@@ -2,9 +2,9 @@
 # Exercise 2.1 #
 ################
 
-value = input('Enter a two digit number (i.e. 24) ')
+value = input("Enter a two digit number (i.e. 24) ")
 
-print('Total of each digit is: ', int(value[0]) + int(value[1]))
+print("Total of each digit is: ", int(value[0]) + int(value[1]))
 
 ################
 # Exercise 2.2 #

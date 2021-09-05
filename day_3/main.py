@@ -10,9 +10,9 @@ number = int(input("Which number do you want to check? "))
 num_mod = number % 2
 
 if num_mod == 0:
-    print('This is an even number.')
+    print("This is an even number.")
 else:
-    print('This is an odd number.')
+    print("This is an odd number.")
 
 ################
 # Exercise 3.2 #
@@ -27,15 +27,15 @@ weight = float(input("enter your weight in kg: "))
 bmi = weight / height ** 2
 
 if bmi < 18.5:
-    print(f'Your bmi is {bmi}, you are Underweight')
+    print(f"Your bmi is {bmi}, you are Underweight")
 elif bmi < 25:
-    print(f'Your bmi is {bmi}, you are normal')
+    print(f"Your bmi is {bmi}, you are normal")
 elif bmi < 30:
-    print(f'Your bmi is {bmi}, you are overweight')
+    print(f"Your bmi is {bmi}, you are overweight")
 elif bmi < 35:
-    print(f'Your bmi is {bmi}, you are obese')
+    print(f"Your bmi is {bmi}, you are obese")
 else:
-    print(f'Your bmi is {bmi}, you are clinically obese')
+    print(f"Your bmi is {bmi}, you are clinically obese")
 
 ################
 # Exercise 3.3 #
@@ -48,11 +48,11 @@ year = int(input("Which year do you want to check? "))
 # Write your code below this line 👇
 if year % 4 == 0:
     if year % 100 == 0 and year % 400 == 0:
-        print('Leap year.')
+        print("Leap year.")
     else:
-        print('Not leap year.')
+        print("Not leap year.")
 else:
-    print('Not leap year.')
+    print("Not leap year.")
 
 ################
 # Exercise 3.4 #
@@ -68,25 +68,25 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 # Write your code below this line 👇
 bill = 0
 
-if size == 'S':
+if size == "S":
     bill += 15
-    if add_pepperoni == 'Y':
+    if add_pepperoni == "Y":
         bill += 2
-elif size == 'M':
+elif size == "M":
     bill += 20
-    if add_pepperoni == 'Y':
+    if add_pepperoni == "Y":
         bill += 3
-elif size == 'L':
+elif size == "L":
     bill += 25
-    if add_pepperoni == 'Y':
+    if add_pepperoni == "Y":
         bill += 3
 else:
-    print('Please select a pizza size.')
+    print("Please select a pizza size.")
 
-if extra_cheese == 'Y':
+if extra_cheese == "Y":
     bill += 1
 
-print(f'Your final bill is: ${bill}')
+print(f"Your final bill is: ${bill}")
 
 ################
 # Exercise 3.5 #
@@ -94,29 +94,29 @@ print(f'Your final bill is: ${bill}')
 
 # 🚨 Don't change the code below 👇
 print("Welcome to the Love Calculator!")
-name1 = 'Brad Pitt'  # input("What is your name? \n")
-name2 = 'Jennifer Aniston'  # input("What is their name? \n")
+name1 = "Brad Pitt"  # input("What is your name? \n")
+name2 = "Jennifer Aniston"  # input("What is their name? \n")
 # 🚨 Don't change the code above 👆
 
 # Write your code below this line 👇
 combined_name = name1.lower() + name2.lower()
 
-t = combined_name.count('t')
-r = combined_name.count('r')
-u = combined_name.count('u')
-e = combined_name.count('e')
+t = combined_name.count("t")
+r = combined_name.count("r")
+u = combined_name.count("u")
+e = combined_name.count("e")
 
-l = combined_name.count('l')
-o = combined_name.count('o')
-v = combined_name.count('v')
+l = combined_name.count("l")
+o = combined_name.count("o")
+v = combined_name.count("v")
 
 true_total = t + r + u + e
 love_total = l + o + v + e
 love_score = str(true_total) + str(love_total)
 
 if int(love_score) < 10 or int(love_score) > 90:
-    print(f'Your score is {love_score}, you go together like coke and mentos.')
+    print(f"Your score is {love_score}, you go together like coke and mentos.")
 elif int(love_score) > 40 and int(love_score) < 50:
-    print(f'Your score is {love_score}, you are alright together.')
+    print(f"Your score is {love_score}, you are alright together.")
 else:
-    print(f'Your score is {love_score}.')
+    print(f"Your score is {love_score}.")
