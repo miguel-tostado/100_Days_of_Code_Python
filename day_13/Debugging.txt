@@ -1,0 +1,1 @@
+This section covered debugging and didn't have any exercises that required me to have my own files.
